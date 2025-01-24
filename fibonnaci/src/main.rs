@@ -4,13 +4,13 @@ fn main() {
     println!("Please input an index to see the Fibonnaci position!");
     let mut no = String::new();
     io::stdin().read_line(&mut no).expect("Failed to read input");
-    let no:u32 = no.trim().parse().expect("Expect a valid number");
+    let no:usize = no.trim().parse().expect("Expect a valid number");
     println!("Generating fibonnaci of index positon: {no}.....");
     let x = generate_fibonnaci(no);
     println!("Fibonnaci of {no} is {x}");
 }
 
-fn generate_fibonnaci(x: u32) -> u32{
+fn generate_fibonnaci(x: usize) -> usize{
   if x == 1 {
     0
   } else if x == 2  {
