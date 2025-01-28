@@ -11,9 +11,9 @@ fn main() {
 }
 
 fn generate_fibonnaci(x: usize) -> usize {
-    if x == 0 {
+    if x == 1 {
         return 0;
-    } else if x == 1 {
+    } else if x == 2 {
         return 1;
     }
 
