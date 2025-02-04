@@ -20,7 +20,7 @@ fn generate_fibonnaci(x: usize) -> usize {
     let mut a = 0;
     let mut b = 1;
 
-    for _ in 2..=x {
+    for _ in 2..x {
         let next = a + b;
         a = b;
         b = next;
